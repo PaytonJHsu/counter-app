@@ -1,0 +1,18 @@
+<div class = "container text-center">
+    <h1>Clicker Game</h1>
+</div>
+<div class = "container text-center">
+    <img src = "/images/cat_click.png" width = "400"></img>
+    <button type="button" id = "countbtn" class="btn btn-primary">Click Me!</button>
+    <a id = "counter"> Count: 0</a>
+</div>
+
+<div>
+    <form method = "POST" action = "/users/submit-score">
+        <label for="submit-name" class="form-label">Name</label>
+        <input type="text" name = "username" class="form-control" id="submit-name" style="width: 200px;"></input>
+        <input type="hidden" name="count" id="countVal">
+        <button type="submit" class="btn btn-primary">Submit Score</button>
+    </form>
+</div>
+<script src = "/javascripts/counter.js"></script>
